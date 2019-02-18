@@ -1,0 +1,613 @@
+<?php header('Content-Type: charset=utf-8'); ?>
+<?php
+$pdo = new PDO('mysql:host=localhost;dbname=admin_zap', "admin_zap", "0ncygF3RlB");
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="plugin/css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="plugin/css/jquery-ui.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="plugin/css/jquery.fancybox.css" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+  <body>
+  <body>
+
+      <div id = "zap-menu" class="navbar-fixed-top navbar-fixed">
+          <section id = "top-line"></section>
+          <div class="container-fluid zap-padding">
+              <a href="#"><img src="images/zap-logo.png" alt="" class="zap-logo"/></a>
+              <div class="menu">
+                  <div id="nav-icon1" class="toggleButton">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                  </div>
+
+              </div>
+              <div class="languages">
+                      <a class="active-link" href="?lang=lv">LV</a>
+                      <a href="?lang=ru">RU</a>
+                      <a href="?lang=en">EN</a>
+             </div>
+          </div>
+          <nav class="top-mnu">
+              <div class="container-fluid zap-padd zap-padding">
+                      <img src="images/zap-logo.png" alt=""  class="zap-logo" style="float:left;"/>
+              </div>
+              <ul>
+                  <li><a class="active-menu go-to1" href=".sakums">ABOUT US</a></li>
+                  <li><a class="go-to" href=".elm">WHAT WE DO</a></li>
+                  <li><a  class="go-to2" href=".izdaritais">COMPLETED WORKS</a></li>
+                  <li><a  class="go-to3" href=".kas">WHO WE ARE</a></li>
+              </ul>
+          </nav>
+      </div>
+<div id="zap-header">
+    <div class="slider">
+      <div class="slide">
+          <header class = "zap-header">
+              <div class = "container sakums">
+                  <div class = "row zap-header-padding">
+                              <div class = "col-md-12 ">
+                                  <div class = "zap-header-text">
+                                      Implementation of your fantasies is our job
+                                  </div>
+                                </div>
+                                  <div class="row" style="padding-bottom:100px;">
+                                      <div class="col-md-6 col-xs-12 col-md-offset-3">
+                                          <a href="#izdaritais" class = "musu-darbi zap-header-button">OUR WORKS</a>
+                                      </div>
+                                      <div class="col-md-3">
+                                           <a href="#ko-mes-daram" class="komesdaram icon-mouse-down"><img src="images/zap-mouse.png" alt="" class="zap-mouse"/></a>
+                                      </div>
+                                  </div>
+                          </div>
+                      </div>
+          </header>
+       </div>
+                      <div class="slide">
+                          <header id = "zap-header1">
+                              <div class = "container sakums">
+                                  <div class = "row zap-header-padding">
+                                      <div class = "col-md-12 ">
+                                          <div class = "zap-header-text1">
+                                              The customer needs and quality are our top priorities!
+                                              <!-- Mūsu prioritātes ir klienta vajadzības un kvalitāte!-->
+                                          </div>
+                                    </div>
+                                      <div class="row" style="padding-bottom:70px;">
+                                          <div class="col-md-6 col-xs-12 col-md-offset-3">
+
+                                              <a href="#ko-mes-daram"  class = "komesdaram zap-header-button">SERVICES</a>
+                                          </div>
+                                          <div class="col-md-3">
+                                               <a href="#ko-mes-daram" class="komesdaram icon-mouse-down"><img src="images/zap-mouse.png" alt="" class="zap-mouse"/></a>
+                                          </div>
+                                      </div>
+                              </div>
+                            </div>
+                        </header>
+                     </div>
+                      <div class="slide">
+                          <header id = "zap-header2">
+                              <div class = "container sakums">
+                                  <div class = "row zap-header-padding">
+                              <div class = "col-md-12 ">
+                                  <div class = "zap-header-text2">
+                                      Unconventional solutions and uncoventional project implementation
+                                  </div>
+                                </div>
+                                  <div class="row" style="padding-bottom:70px;">
+                                      <div class="col-md-6 col-xs-12 col-md-offset-3">
+                                          <a href="#ko-mes-daram" class = "komesdaram zap-header-button">SERVICES</a>
+                                      </div>
+                                      <div class="col-md-3">
+                                           <a href="#ko-mes-daram" class="komesdaram icon-mouse-down"><img src="images/zap-mouse.png" alt="" class="zap-mouse"/></a>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </header>
+                      </div>
+
+
+      </div>
+      </div>
+      <section id="ko-mes-daram" class="cd-main-content">
+          <div class="container elm">
+              <div class="row  ko-mes-daram-padding1">
+                  <div class="col-md-12">
+                      <div class="ko-mes-daram-text">
+                            <p>
+                                SERVICES
+                            </p>
+                            <img src="images/garmowka.png" alt="" />
+                      </div>
+                  </div>
+              </div>
+              <div class="row  ko-mes-daram-padding2">
+                  <div class="col-md-12">
+                      <div id="accordion">
+                          <h3> Development and implementation of the advertisement concept </h3>
+                          <div class="first-garmowka" style="text-align:left">
+                               <ul class="spiski">
+                              <li>-	Development and implementation of theadvertisement campaign technical concept</li>
+                              <li>-	Development of the design and visual presentation</li>
+                              <li>-	Development, implementation of BTL, individual orders and other unconventional solutions</li>
+                              <li>-	Development, implementationof scenography and the interior concept</li>
+                              <li>-	Merchandising</li>
+                          </ul>
+                          </div>
+                          <h3>Production of advertising materials</h3>
+                          <div>
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <ul class="spiski">
+                                          <li>-	Large-size printing</li>
+                                          <li>-	Graphic arts</li>
+                                          <li>-	Typographical products</li>
+                                          <li>-	UV printing</li>
+                                          <li>-	Plotting?></li>
+                                          <li>-	Promotional products (printing and materials)</li>
+                                      </ul>
+                                  </div>
+                                 <div class="col-md-6">
+                                     <ul class="spiski">
+                                         <li>-	Lightbox advertising</li>
+                                         <li>-	Mobile advertisement</li>
+                                         <li>-	Outdoor advertising</li>
+                                         <li>- Installation works (pasting, installation, etc)</li>
+                                         <li>- Merchandising</li>
+                                         <li>- Stands (POS, fairs, etc)</li>
+                                     </ul>
+                                 </div>
+                              </div>
+                          </div>
+                          <h3>POS and BTL materials</h3>
+                          <div>
+                              <ul class="spiski">
+                                  <li>- Stands production</li>
+                                  <li>- Display and pasting works</li>
+                                  <li>- Installation and disassembly</li>
+                                  <li>- Logistics and rent</li>
+
+                              </ul>
+                          </div>
+                          <h3>Events and retail marketing</h3>
+                          <div>
+                              <ul class="spiski">
+                                  <li>- Corporate events and entertainment events</li>
+                                  <li>- Presentations, workshops and team cohesion</li>
+                                  <li>- Merchandising</li>
+                                  <li>- Promo marketing</li>
+                                  <li>- Development and implementation of events, sales events visual concept</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section id = "sazinatines">
+          <div class="container">
+              <div class="row sazinatines-padding">
+                  <div class="col-md-12">
+                      <div class="sazinatines-text">
+                          <p class="sazinatines-text-p">
+                              Customer marketing communication simplified!
+                          </p>
+                            <a href="#kamMesEsam" class = "sazinatines sazinatines-header-button"> GET IN TOUCH</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section id= "izdaritais" class="izdaritais">
+          <div class="container">
+              <div class="row izdaritais-padding">
+                  <div class="col-md-12" style="text-align:center">
+                      <div class="izdaritais-text">
+                          IZDARĪTAIS
+                      </div>
+                       <img src="images/green-garmowka.png" alt="" />
+                  </div>
+              </div>
+
+              <div class="row slider-padding hidden-xs" >
+                  <div class="slider1  " >
+                      <div class="slide">
+                          <div class="row">
+                              <div class="col-lg-10 col-md-12 col-lg-offset-1">
+
+                                  <div class="col-md-4 ">
+                                      <div class="portfolio-link block">
+                                          <div class="home-active">
+                                              <a class="fancybox" rel="group" href="thumb-2.jpg">\
+                                                  <img src="images/preview_2.jpg" alt="" class="portfolio-small-image" />
+                                              </a>
+                                              <div class="block-hidden">
+                                                  lorem ipsum
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="Darbs">
+                                          lorem ipsum
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 ">
+                                      <div class="portfolio-link block">
+                                          <div class="home-active">
+                                              <a class="fancybox" rel="group" href="thumb-3.jpg">\
+                                                  <img src="images/preview_3.jpg" alt="" class="portfolio-small-image" />
+                                              </a>
+                                              <div class="block-hidden">
+                                                  lorem ipsum
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="Darbs">
+                                          lorem ipsum
+                                      </div>
+                                  </div>        <div class="col-md-4 ">
+                                  <div class="portfolio-link block">
+                                      <div class="home-active">
+                                          <a class="fancybox" rel="group" href="thumb-2.jpg">\
+                                              <img src="images/preview_2.jpg" alt="" class="portfolio-small-image" />
+                                          </a>
+                                          <div class="block-hidden">
+                                              lorem ipsum
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="Darbs">
+                                      lorem ipsum
+                                  </div>
+                              </div>
+
+
+                              </div>
+                          </div>
+                      </div>
+                      <div class="slide">
+                          <div class="row">
+                              <div class="col-lg-10 col-md-12 col-lg-offset-1">
+                                  <div class="col-md-4 ">
+                                      <div class="portfolio-link block">
+                                          <div class="home-active">
+                                              <a class="fancybox" rel="group" href="thumb-2.jpg">\
+                                                  <img src="images/preview_2.jpg" alt="" class="portfolio-small-image" />
+                                              </a>
+                                              <div class="block-hidden">
+                                                  lorem ipsum
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="Darbs">
+                                          lorem ipsum
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 ">
+                                      <div class="portfolio-link block">
+                                          <div class="home-active">
+                                              <a class="fancybox" rel="group" href="thumb-3.jpg">\
+                                                  <img src="images/preview_3.jpg" alt="" class="portfolio-small-image" />
+                                              </a>
+                                              <div class="block-hidden">
+                                                  lorem ipsum
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="Darbs">
+                                          lorem ipsum
+                                      </div>
+                                  </div> <div class="col-md-4 ">
+                                  <div class="portfolio-link block">
+                                      <div class="home-active">
+                                          <a class="fancybox" rel="group" href="thumb-2.jpg">\
+                                              <img src="images/preview_2.jpg" alt="" class="portfolio-small-image" />
+                                          </a>
+                                          <div class="block-hidden">
+                                              lorem ipsum
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="Darbs">
+                                      lorem ipsum
+                                  </div>
+                              </div>
+
+
+                              </div>
+                          </div>
+                      </div>
+                      <div class="slide">
+                          <div class="row">
+                              <div class="col-lg-10 col-md-12 col-lg-offset-1 ">
+                                  <div class="col-md-4 ">
+                                      <div class="portfolio-link block">
+                                          <div class="home-active">
+                                              <a class="fancybox" rel="group" href="thumb-3.jpg">\
+                                                  <img src="images/preview_3.jpg" alt="" class="portfolio-small-image" />
+                                              </a>
+                                              <div class="block-hidden">
+                                                  lorem ipsum
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="Darbs">
+                                          lorem ipsum
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 ">
+                                      <div class="portfolio-link block">
+                                          <div class="home-active">
+                                              <a class="fancybox" rel="group" href="thumb-2.jpg">\
+                                                  <img src="images/preview_2.jpg" alt="" class="portfolio-small-image" />
+                                              </a>
+                                              <div class="block-hidden">
+                                                  lorem ipsum
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="Darbs">
+                                          lorem ipsum
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 ">
+                                      <div class="portfolio-link block">
+                                          <div class="home-active">
+                                              <a class="fancybox" rel="group" href="thumb-3.jpg">\
+                                                  <img src="images/preview_3.jpg" alt="" class="portfolio-small-image" />
+                                              </a>
+                                              <div class="block-hidden">
+                                                  lorem ipsum
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="Darbs">
+                                          lorem ipsum
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+
+                      </div>
+                  </div>
+
+              </div>
+
+
+                  <!--  ____FOR MOBILE VERSION PROJECTS ______  -->
+              <div class="row visible-xs" style="margin-top:20px;  padding-left:2px; padding-right: 2px;">
+
+
+              <div class="slider1  " >
+
+                  <div class="slide">
+                      <div class="row">
+                          <div class="col-xs-12">
+
+                          </div>
+                      </div>
+                  </div>
+                  <div class="slide">
+                      <div class="row">
+                          <div class="col-xs-12">
+
+                          </div>
+                      </div>
+                  </div>
+                  <div class="slide">
+                      <div class="row">
+                          <div class="col-xs-12 ">
+
+                                  <div class="col-xs-12 ">
+                                      <div class="portfolio-link block">
+                                          <div class="home-active">
+                                                  <a class="fancybox" rel="group" href="thumb-1.jpg"><img src="images/preview_1.jpg" alt="" class="portfolio-small-image" /></a>
+                                                  <div class="block-hidden">
+                                                    <p class="uff">lorem ipsum</p>
+                                                </div>
+                                          </div>
+                                      </div>
+                                      <div class="Darbs">
+                                          lorem ipsum
+                                      </div>
+                                  </div>
+
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+               </div>
+              <div id="kamMesEsam" class="row KAS-ESAM-padding kas">
+                  <div class="izdaritais-text">
+                      WHO WE ARE
+                  </div>
+                    <img src="images/yellow-garmowka.png" alt="" />
+            </div>
+            <div class="row KAS-ESAM">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="block-left">
+                        <div class="esam-photo">
+                            <img src="images/marta.png" class="esam-photo" alt="" />
+
+                        </div>
+                        <div class="left">
+                            <div> MARTA KALĒJA</div>
+                            <img src="images/yellow-small-garmowka.png" class="yellow-small-garmowka" alt="" />
+                            <span>Project management</span>
+                            <span>T: +371 29346154</span>
+                            <span>marta@azap.lv</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="block-center">
+                        <div class="esam-photo">
+                            <img src="images/martines-image.png" class="esam-photo" alt="" />
+                        </div>
+                        <div class="left leftleft">
+                            <div>MĀRTIŅŠ LAGZDIŅŠ</div>
+                            <img src="images/yellow-small-garmowka.png" class="yellow-small-garmowka" alt="" />
+                            <span>Development/Sales management</span>
+                            <span>T: +371 26680173</span>
+                            <span>martins@azap.lv</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="block-right">
+                        <div class="esam-photo">
+                            <img src="images/toms.png" class="esam-photo" alt="" />
+                        </div>
+                        <div class="left">
+                            <div>TOMS GRASMANIS</div>
+                            <img src="images/yellow-small-garmowka.png" class="yellow-small-garmowka" alt="" />
+                            <span>Technical design manager</span>
+                            <span>T: +371 28307016</span>
+                            <span>martins@azap.lv</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </section>
+      <footer id= "footer">
+          <div class="container">
+              <div class="row footer-padding">
+                  <div class="col-md-3">
+                      <a href="#"><img src="images/footer_logo.png" alt="" /></a>
+                  </div>
+                  <div class="col-md-5 col-sm-6 xx">
+                      <div>ZAP SIA</div>
+                      <div>PVN Reģ.nr. LV40103874700</div>
+                      <div>Rūpniecības iela 7-1, Rīga, LV-1010 </div>
+                      <div>AS Swedbank, HABALV22</div>
+                      <div>LV64HABA0551039731035</div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 xx">
+                      <div>
+                          ZAP birojs
+                      </div>
+                      <div class="">
+                          zap@azap.lv
+                      </div>
+                      <div class="">
+                          +371 20259555
+                      </div>
+                  </div>
+              </div>
+              <div class="row social-padding">
+                  <div class="col-md-12 col-xs-12">
+                      <div class="social-icon">
+                            <a href="#"><img src="images/twitter.png" alt="" /></a>
+                            <a href="#"><img src="images/facebook.png" alt="" /></a>
+                            <a href="#"><img src="images/instagram.png" alt="" /></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="plugin/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="plugin/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="plugin/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript" src="plugin/jquery.fancybox-media.js"></script>
+    <script src="plugin/jquery.bxslider.min.js"></script>
+    <script src="plugin/jquery-ui.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {var icons = {
+     header: "ui-icon-circle-arrow-e",
+     activeHeader: "ui-icon-circle-arrow-s"
+   };
+    $( "#accordion" ).accordion({
+            icons: icons,
+            active: false,
+            collapsible: true
+        });
+	});
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		$(".fancybox").fancybox();
+    	});
+    </script>
+
+    <!--    FIXED TOP MENU   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-autohidingnavbar/4.0.0/jquery.bootstrap-autohidingnavbar.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+/*        $(window).scroll(function() {
+
+                console.log('ya svetliy');
+
+
+                    $("#zap-menu").animate({
+                      backgroundColor: 'rgba(0,0,0, 0.1)'
+                    });
+
+                        console.log($("#zap-menu").offset().top);
+            if($(window).scrollTop() === 0){
+                $("#zap-menu").animate({
+                  backgroundColor: 'rgba(0,0,0,0.9)'
+                });
+                console.log('ya temniy');
+                console.log($("#zap-menu").offset().top);
+            }
+
+
+});
+*/
+$(".navbar-fixed-top").autoHidingNavbar();
+var scroll_transparency = false;
+ $(window).scroll(function() {
+
+    //$('div.navbar-main-top').hide(500);
+
+    if ($(window).scrollTop() == 0) {
+        scroll_transparency = false;
+        $('#zap-menu').animate({
+          backgroundColor: 'rgba(255,255,255,1.0)'
+        });
+        console.log('ya svetliy');
+
+    }else{
+        if (scroll_transparency == false && $(window).scrollTop() > 0){
+            $('#zap-menu').animate({
+              backgroundColor: 'rgba(255,255,255,0.5)'
+            });
+            scroll_transparency = true;
+            console.log('ya temniy');
+        }
+    }
+});
+        });
+
+   </script>
+   <script>
+
+  </script>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

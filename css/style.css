@@ -1,0 +1,831 @@
+@font-face {
+    font-family: Gotham-Book; /* Имя шрифта */
+    src: url(../fonts/Gotham-Book.otf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+   font-family: Gotham-Bold; /* Имя шрифта */
+   src: url(../fonts/Gotham-Bold.otf); /* Путь к файлу со шрифтом */
+  }
+
+@font-face {
+ font-family: titillium-web; /* Имя шрифта */
+ src: url(../fonts/titillium-web.regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+   font-family: Rubik-Medium; /* Имя шрифта */
+   src: url(../fonts/Rubik-Medium.ttf); /* Путь к файлу со шрифтом */
+  }
+
+@font-face {
+ font-family: Rubik-Regular; /* Имя шрифта */
+ src: url(../fonts/Rubik-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+
+
+
+  body{
+	background-image: url('../images/static-fon.png');
+	background-attachment: fixed;
+}
+#top-line{
+    background-image: url(../images/top-line.png);
+    background-size: cover;
+    height: 6px;
+}
+#zap-menu{
+    background-color: rgba(255,255,255, 1);
+}
+#zap-menu .zap-padding {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20%;
+    padding-right: 16%;
+
+}
+#zap-menu  .zap-padd {
+    padding-top: 22px !important;
+    /*position: relative;*/
+}
+#zap-menu .zap-logo{
+    float: left;
+    width: 90px;
+    height: 30px;
+}
+#zap-menu .menu{
+    float: right;
+    z-index: 10000;
+    position: absolute;
+    right: 22%;
+    margin-top: 8px;
+}
+
+.top-mnu{
+    text-align: center;
+    display: none;
+    top:0;
+    right:  0px;
+    position: absolute;
+    background-image: url(../images/menu-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /*height: 800px;*/
+    z-index: 1000;
+}
+
+.top-mnu ul{
+    padding-top: 200px;
+    padding-left: 0;
+}
+.top-mnu li{
+    list-style-type: none;
+
+}
+.top-mnu a{
+    font-family: Rubik-Regular;
+    font-size: 28px;
+    color: #000000;
+}
+a.active-menu{
+    color:#ffffff ;
+}
+
+#zap-menu .languages{
+    float: right;
+    margin-top:6px;
+    margin-right: 10px;
+}
+#zap-menu .languages a{
+    color:#002c3d;
+}
+
+#zap-menu .active-link{
+    text-decoration:underline;
+}
+/* navbar-toggle*/
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  width: 25px;
+  height: 30px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 div, #nav-icon3 div, #nav-icon4 div {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #47423a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 div:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 div:nth-child(2) {
+  top: 7px;
+}
+
+#nav-icon1 div:nth-child(3) {
+  top: 14px;
+}
+
+#nav-icon1.open div:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open div:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open div:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+/*END navbar-toggle*/
+
+
+#zap-header{
+padding-bottom:25px;
+
+}
+.zap-header{
+    background-image: url(../images/zap-fon.jpg);
+    background-size: cover;
+/*    height: 756px;*/
+    height: auto;
+    background-position: center;
+    text-align: center;
+    position: relative;
+
+
+}
+#zap-header1{
+    background-image: url(../images/header2.jpg);
+    background-size: cover;
+/*    height: 756px;*/
+    height: auto;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    padding-bottom:25px;
+}
+#zap-header2{
+    background-image: url(../images/header1.jpg);
+    background-size: cover;
+/*    height: 756px;*/
+    height: auto;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    padding-bottom:25px;
+
+}
+
+ #zap-header .zap-header-padding{
+    padding: 250px 140px 30px;
+}
+ #zap-header .zap-header-text{
+     font-size: 26px;
+     text-align: center;
+     color: #ffffff;
+     font-family: Rubik-Regular;
+     height: 120px;
+     line-height: 1.9;
+     margin-bottom: 155px;
+ }
+  #zap-header .zap-header-text1,  #zap-header .zap-header-text2{
+    font-size: 26px;
+     height: 120px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Rubik-Regular;
+    line-height: 1.9;
+    margin-bottom: 160px;
+}
+
+#zap-header .bx-wrapper .bx-pager.bx-default-pager a{
+    margin: -80px 15px !important;
+}
+ .zap-header-button {
+    border: 4px solid #ffffff;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 18px 38px;
+    text-decoration: none;
+    font-weight: 500;
+    /*margin: 10px 0 10px;*/
+    font-family: Rubik-Medium;
+
+}
+.mouse{
+    height: 100px;
+}
+
+
+ #zap-header img.zap-mouse{
+    float: right;
+    width: 50px;
+    height: 39px;
+    margin-top: -4px;
+    z-index: 5;
+    -webkit-animation: b 1.5s infinite;
+    animation: b 1.5s infinite;
+}
+@keyframes b{
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+/*    ko-mes-daram 1 block -*/
+
+#ko-mes-daram .ko-mes-daram-padding1{
+    padding: 60px 140px 50px;
+}
+#ko-mes-daram .ko-mes-daram-text{
+    text-align: center;
+    font-size: 25px;
+    font-family: Rubik-Medium;
+}
+
+#ko-mes-daram .ko-mes-daram-padding2{
+    padding: 5px 140px 125px;
+}
+#accordion h3{
+    text-align: center;
+    font-family: Rubik-Medium; /* Имя шрифта */
+    font-size: 21px;
+}
+.first-garmowka{
+    font-size: 18px;
+    font-family: Rubik-Regular;
+}
+.spiski{
+    display: inline-block;
+    margin: 0 auto;
+}
+.spiski li{
+    list-style-type: none;
+    font-size: 18px;
+    font-family: Rubik-Regular;
+}
+/*   END ko-mes-daram  1 block -*/
+
+
+
+#sazinatines {
+    background-image: url(../images/BACKGROUND.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#sazinatines .sazinatines-text{
+    text-align: center;
+}
+#sazinatines .sazinatines-padding{
+    padding: 100px 140px 95px;
+}
+#sazinatines .sazinatines-text-p{
+    font-size: 28px;
+    color: #ffffff;
+    font-family: Rubik-Regular; /* Имя шрифта */
+    margin-bottom: 55px;
+}
+#sazinatines .sazinatines-header-button{
+    border: 4px solid #ffffff;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 18px 38px;
+    text-decoration: none;
+    font-weight: 500;
+    /*margin: 10px 0 10px;*/
+    font-family: Rubik-Medium;
+}
+
+/*izdaritais  BLOCK*/
+#izdaritais .izdaritais-text{
+    font-size: 25px;
+    font-family: Rubik-Medium;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#izdaritais .Darbs{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+#izdaritais .izdaritais-padding{
+    padding-top: 80px;
+}
+.slider-padding{
+    padding: 75px 50px 30px;
+}
+#izdaritais .KAS-ESAM-padding{
+    padding: 20px 140px 40px;
+    text-align: center;
+}
+#izdaritais .KAS-ESAM{
+    padding: 30px 140px 80px;
+}
+#izdaritais .block-left{
+
+    margin-top: 15px;
+
+}
+#izdaritais .esam-photo{
+    width: 131px;
+    height: 131px;
+
+    margin-bottom: 10px;
+
+}
+
+#izdaritais .block-right{
+    float: right;
+    margin-top: 15px;
+}
+#izdaritais .KAS-ESAM span{
+    display: block;
+    text-align: left;
+}
+
+
+#izdaritais .block-center{
+    /*padding-left: 50px;*/
+    margin: 0 auto;
+    margin-top: 15px;
+}
+#izdaritais .block-right span, #izdaritais .block-left span, #izdaritais .block-center span{
+    font-size: 16px;
+    font-family: Rubik-Regular;
+    color: #002c3e;
+}
+#izdaritais .block-right div, #izdaritais .block-left div, #izdaritais .block-center div{
+    font-size: 18px;
+     font-family: Rubik-Medium;
+     color: #002c3e;
+}
+    /* effect on HOVER*/
+    .portfolio-link{
+            margin-bottom:50px;
+    }
+    .portfolio-small-image{
+        width: 270px;
+        height: 206px;
+        margin: 0 auto;
+    }
+
+    .block{
+        display: block;
+        opacity: 1;
+        -webkit-transform: scale(1,1);
+        -webkit-transition-timing-function: ease-out;
+        -webkit-transition-duration: 500ms;
+        -moz-transform: scale(1,1);
+        -moz-transition-timing-function: ease-out;
+        -moz-transition-duration: 550ms;
+    }
+    .block:hover {
+        -webkit-transform: scale(1.04,1.04);
+        -webkit-transition-timing-function: ease-out;
+        -webkit-transition-duration: 550ms;
+        -moz-transform: scale(1.04,1.04);
+        -moz-transition-timing-function: ease-out;
+        -moz-transition-duration: 500ms;
+    }
+
+    .home-active{
+        width: 270px;
+        height: 206px;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .block-hidden{
+        display: none;
+    }
+
+    .home-active:hover .block-hidden{
+        width: 270px;
+        height: 86px;
+        display: block;
+        position: absolute; bottom: 0; right:  0;
+        background: rgba(0,0,0,0.4);
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+    }
+    .block-hidden p{
+
+        padding-top: 5px;
+        /*top: 30%;
+        left: 18%;*/
+        font-family: Rubik-Regular;
+        font-size: 17px;
+        text-align: center;
+
+
+    margin: auto;
+    /*transform: translateY(-50%);*/
+    }
+    /* effect on HOVER*/
+/*  izdaritais  END  */
+
+
+
+
+/*    ___BLOCK FOOTER___  */
+#footer{
+    background-image: url(../images/footer_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#footer .footer-padding{
+    padding: 70px 140px 95px;
+}
+.footer-padding img{
+    width: 187px;
+    height: 86px;
+}
+#footer .social-icon{
+    text-align: center;
+}
+#footer .social-icon img{
+    margin-right: 25px;
+}
+#footer .xx div{
+
+    padding: 0;
+    color: #ffffff;
+    font-family: Rubik-Regular;
+
+}
+#footer .social-padding{
+    padding: 24px  140px 24px;
+}
+
+/*    ___END  BLOCK FOOTER___  */
+
+
+/*   MEADIA QUARES*/
+@media (max-width:1690px) {
+    #zap-menu .menu{
+        right: 17%;
+        }
+    #zap-menu .zap-padding{
+        padding-left: 12%;
+        padding-right: 12%;
+        position: relative;
+    }
+    #zap-header .zap-padd{
+        padding-top: 31px !important;
+    }
+}
+@media (max-width:1510px) {
+    #zap-menu .menu{
+        right: 13%;
+        }
+    #zap-menu .zap-padding{
+        padding-left: 6%;
+        padding-right: 5%;
+    }
+    #zap-header .zap-padd{
+        padding-top: 31px !important;
+    }
+}
+
+@media (max-width:1200px) {
+    #zap-header .zap-header-padding{
+            padding: 200px 140px 30px;
+    }
+
+}
+@media (max-width:1199px) {
+    #ko-mes-daram .ko-mes-daram-padding1, #ko-mes-daram .ko-mes-daram-padding2,
+    #sazinatines .sazinatines-padding,#izdaritais .KAS-ESAM-padding,#footer .footer-padding,
+    #izdaritais .KAS-ESAM, #footer .social-padding {
+        padding-left:70px;
+        padding-right: 70px;
+
+    }
+
+     #zap-header .zap-header-text1{
+         height: 120px;
+        /*margin-bottom: 208px;*/
+    }
+    #zap-header .zap-header-text, #zap-header .zap-header-text2{
+         height: 120px;
+            /*margin-bottom: 203px;*/
+    }
+    .portfolio-small-image{
+        width: 270px;
+        height: 206px;
+        margin: 0;
+    }
+    .home-active{
+        width: 270px;
+        height: 206px;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .home-active:hover .block-hidden{
+        width: 270px;
+
+
+    }
+    #sazinatines .sazinatines-text-p{
+        font-size: 26px;
+
+    }
+    #izdaritais .block-right span, #izdaritais .block-left span, #izdaritais .block-center span{
+        font-size: 16px;
+    }
+    .footer-padding img{
+        width: 180px;
+        height: 79px;
+    }
+    #footer .xx div{
+        padding-left: 20px;
+    }
+}
+@media (max-width:992px) {
+    #zap-header .zap-header-text2{
+            margin-bottom: 208px;
+    }
+     #ko-mes-daram .ko-mes-daram-padding1, #ko-mes-daram .ko-mes-daram-padding2,
+     #sazinatines .sazinatines-padding,#izdaritais .KAS-ESAM-padding,#footer .footer-padding,
+     #izdaritais .KAS-ESAM, #footer .social-padding {
+         padding-left:2px;
+         padding-right: 2px;
+
+     }
+     .slider-padding{
+         padding: 75px 2px 30px;
+     }
+     #zap-header .zap-header-padding{
+         padding-left:2px;
+         padding-right: 2px;
+         padding-top: 110px;
+     }
+     #zap-menu .menu{
+         right: 10%;
+     }
+     #zap-header .zap-padd {
+         padding-top: 31px !important;
+
+         padding-left:2px !important;
+         padding-right: 2px !important;
+     }
+      #zap-menu .zap-padding{
+          padding-left:2px;
+          padding-right: 2px;
+      }
+      #sazinatines .sazinatines-text-p{
+          font-size: 25px;
+      }
+      .portfolio-small-image{
+          margin: 0 auto;
+          width: 320px;
+          height: 221px;
+      }
+      .home-active{
+          width: 320px;
+          height: 221px;
+          position: relative;
+          text-align: center;
+          margin: 0 auto;
+      }
+      .home-active:hover .block-hidden{
+          width: 320px;
+
+          position: absolute; bottom: 0; right:  0;
+      }
+      .block-hidden p{
+          padding-top: 5px;
+          font-family: Rubik-Regular;
+          font-size: 17px;
+          text-align: center;
+      }
+      .footer-padding img{
+         margin-bottom: 15px;
+      }
+      #footer .xx div{
+          padding-left: 0px;
+      }
+}
+@media (max-width:991px) {
+    #zap-header .zap-header-text2{
+             margin-bottom: 160px;
+    }
+    .portfolio-link{
+            margin-bottom: 20px;
+    }
+    #izdaritais .Darbs{
+            margin-bottom: 30px;
+    }
+}
+@media (max-width:820px) {
+    #zap-menu .menu{
+        right: 15%;
+    }
+}
+
+@media (max-width:768px) {
+    .spiski{
+        padding: 0;
+    }
+
+    #izdaritais .left{
+        text-align: center;
+        float: none;
+    }
+    #izdaritais .KAS-ESAM span{
+        text-align: center;
+    }
+    #izdaritais .block-center{
+        margin: 0 auto;
+    }
+    #izdaritais .block-left, #izdaritais .block-right, #izdaritais .block-center {
+        float: none;
+        margin-top: 15px;
+    }
+    .portfolio-small-image{
+
+        margin: 0 auto;
+    }
+    #izdaritais .esam-photo{
+        width: 131px;
+        height: 131px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+    }
+    #sazinatines .sazinatines-text-p{
+        font-size: 24px;
+    }
+    #sazinatines .sazinatines-padding{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+    }
+    #izdaritais .bx-wrapper .bx-pager.bx-default-pager a{
+            margin: 5px 15px;
+    }
+
+}
+@media (max-width:666px) {
+    #zap-header .bx-wrapper .bx-pager.bx-default-pager a{
+        margin: -110px 15px !important;
+    }
+    #zap-header .zap-header-text{
+        height: 120px;
+    }
+    #zap-header .zap-header-text1, #zap-header .zap-header-text2{
+        height: 120px;
+    }
+}
+@media (max-width:588px) {
+
+    #zap-header .zap-header-text{
+        margin-bottom: 155px;
+    }
+
+}
+@media (max-width:550px) {
+    #zap-menu .menu{
+        right: 18%;
+    }
+}
+@media (max-width:480px) {
+    .zap-header-button, #sazinatines .sazinatines-header-button{
+        font-size: 20px;
+        padding: 13px 33px;
+    }
+     #ko-mes-daram .ko-mes-daram-text{
+         font-size: 20px;
+     }
+     #accordion h3{
+             font-size: 18px;
+     }
+     #zap-header .zap-header-text, #zap-header .zap-header-text1, #zap-header .zap-header-text2{
+         font-size: 22px;
+         height: 120px;
+         margin-bottom: 110px;
+     }
+     #sazinatines .sazinatines-text-p{
+         font-size: 21px;
+     }
+     #ko-mes-daram .ko-mes-daram-padding2{
+             padding-top: 10px;
+     }
+     .zap-header,  #zap-header1,  #zap-header2{
+         height: 500px;
+     }
+     #ko-mes-daram .ko-mes-daram-padding1{
+         padding-top:10px;
+     }
+     .spiski li{
+         font-size: 16px;
+     }
+     #ko-mes-daram .ko-mes-daram-padding2{
+         padding-bottom: 80px;
+     }
+     #izdaritais .izdaritais-text{
+         font-size: 20px;
+     }
+     #izdaritais .Darbs{
+          font-size: 20px;
+     }
+
+}
+@media (max-width:470px) {
+    #zap-menu .menu{
+        right: 21%;
+    }
+}
+@media (max-width:400px) {
+    #zap-menu .menu{
+        right: 25%;
+    }
+    #ko-mes-daram .ko-mes-daram-padding1 {
+        padding-bottom: 50px;
+    }
+    #sazinatines .sazinatines-text-p{
+            font-size: 20px;
+    }
+
+}
+@media (max-width:380px) {
+    #zap-header .zap-header-text, #zap-header .zap-header-text1, #zap-header .zap-header-text2{
+            font-size: 21px;
+            height: 120px;
+    }
+
+}
+@media (max-width:380px) {
+    #zap-header .zap-header-text, #zap-header .zap-header-text1, #zap-header .zap-header-text2{
+            font-size: 20px;
+            margin-bottom: 110px;
+    }
+
+}
+@media (max-width:320px) {
+    #zap-header img.zap-mouse{
+            margin-top: 20px;
+    }
+}

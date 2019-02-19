@@ -23,11 +23,12 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	$('.slider1').bxSlider({
+	$('.slide').bxSlider({
 		pager: true,
 		controls: true,
 		oneToOneTouch:false,
-
+ 		minSlides: 1,
+        	maxSlides: 3,
 	});
 });
 

@@ -17,13 +17,12 @@ $(document).ready(function(){
 		pager: true,
 		controls: false,
 		oneToOneTouch:false, auto: true,
-		 minSlides: 1,
-                 maxSlides: 3,
+		
 	});
 });
 
 $(document).ready(function(){
-	$('.slide').bxSlider({
+	$('.first-slider').bxSlider({
 		pager: true,
 		controls: true,
 		oneToOneTouch:false,

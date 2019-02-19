@@ -26,7 +26,8 @@ $(document).ready(function(){
 		pager: true,
 		controls: true,
 		oneToOneTouch:false,
- 		
+ 		minSlides: 3,
+        	maxSlides: 3,
 	});
 });
 

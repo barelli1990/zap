@@ -16,7 +16,9 @@ $(document).ready(function(){
 	$('.slider').bxSlider({
 		pager: true,
 		controls: false,
-		oneToOneTouch:false, auto: true
+		oneToOneTouch:false, auto: true,
+		 minSlides: 1,
+                 maxSlides: 3,
 	});
 });
 
@@ -29,20 +31,12 @@ $(document).ready(function(){
 	});
 });
 
-/*var h = document.getElementById("zap-header").offsetHeight;*/
-/*var h = document.getElementsByClassName('zap-header');*/
-/* var v = document.getElementById("sazinatines").offsetHeight;*/
+
 $(document).ready(function(){
 	var h = $('.zap-header').height();
 	console.log(h);
 	var v = $('#zap-menu').height();
-		console.log(v);
-	/*var x   = $('.top-mnu').height(h+v+6);*/
 	var x = $('.top-mnu').css('height',h);
-
-/*	var x = document.getElementsByClassName('.top-mnu').style.height = h + v +'px';*/
-		console.log(x);
-
 });
 $(document).ready(function(){
     $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to

@@ -699,6 +699,7 @@ padding-bottom:25px;
     }
     #izdaritais .block-center{
         margin: 0 auto;
+	padding-left: 0px;
     }
     #izdaritais .block-left, #izdaritais .block-right, #izdaritais .block-center {
         float: none;

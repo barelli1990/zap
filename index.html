@@ -1,3 +1,20 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @barelli1990 Sign out
+0
+0 0 barelli1990/zap
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+zap/index.html
+0872464  7 minutes ago
+@barelli1990 barelli1990 Update index.html
+     
+554 lines (546 sloc)  18.9 KB
 <?php header('Content-Type: charset=utf-8'); ?><?php
 $pdo = new PDO('mysql:host=localhost;dbname=admin_zap', "admin_zap", "0ncygF3RlB");
 ?>
@@ -255,7 +272,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=admin_zap', "admin_zap", "0ncygF3RlB
 					<div class="slide">
 						<div class="row">
 							<div class="col-lg-10 col-md-12 col-lg-offset-1">
-								<div class="col-md-4">
+								<div class="slider-block">
 									<div class="portfolio-link block">
 										<div class="home-active">
 											<a class="fancybox" href="thumb-2.jpg" rel="group">\ <img alt="" class="portfolio-small-image" src="images/preview_2.jpg"></a>
@@ -268,7 +285,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=admin_zap', "admin_zap", "0ncygF3RlB
 										lorem ipsum
 									</div>
 								</div>
-								<div class="col-md-4">
+								<div class="slider-block">
 									<div class="portfolio-link block">
 										<div class="home-active">
 											<a class="fancybox" href="thumb-3.jpg" rel="group">\ <img alt="" class="portfolio-small-image" src="images/preview_3.jpg"></a>
@@ -281,55 +298,10 @@ $pdo = new PDO('mysql:host=localhost;dbname=admin_zap', "admin_zap", "0ncygF3RlB
 										lorem ipsum
 									</div>
 								</div>
-								<div class="col-md-4">
+								<div class="slider-block">
 									<div class="portfolio-link block">
 										<div class="home-active">
 											<a class="fancybox" href="thumb-2.jpg" rel="group">\ <img alt="" class="portfolio-small-image" src="images/preview_2.jpg"></a>
-											<div class="block-hidden">
-												<p class="block-hidden-p">lorem ipsum</p>
-											</div>
-										</div>
-									</div>
-									<div class="Darbs">
-										lorem ipsum
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slide">
-						<div class="row">
-							<div class="col-lg-10 col-md-12 col-lg-offset-1">
-								<div class="col-md-4">
-									<div class="portfolio-link block">
-										<div class="home-active">
-											<a class="fancybox" href="thumb-3.jpg" rel="group">\ <img alt="" class="portfolio-small-image" src="images/preview_3.jpg"></a>
-											<div class="block-hidden">
-												<p class="block-hidden-p">lorem ipsum</p>
-											</div>
-										</div>
-									</div>
-									<div class="Darbs">
-										lorem ipsum
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="portfolio-link block">
-										<div class="home-active">
-											<a class="fancybox" href="thumb-2.jpg" rel="group">\ <img alt="" class="portfolio-small-image" src="images/preview_2.jpg"></a>
-											<div class="block-hidden">
-												<p class="block-hidden-p">lorem ipsum</p>
-											</div>
-										</div>
-									</div>
-									<div class="Darbs">
-										lorem ipsum
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="portfolio-link block">
-										<div class="home-active">
-											<a class="fancybox" href="thumb-3.jpg" rel="group">\ <img alt="" class="portfolio-small-image" src="images/preview_3.jpg"></a>
 											<div class="block-hidden">
 												<p class="block-hidden-p">lorem ipsum</p>
 											</div>
@@ -522,20 +494,16 @@ $pdo = new PDO('mysql:host=localhost;dbname=admin_zap', "admin_zap", "0ncygF3RlB
 	</script> 
 	<script type="text/javascript">
 	   $(document).ready(function() {
-
 	$(".navbar-fixed-top").autoHidingNavbar();
 	var scroll_transparency = false;
 	$(window).scroll(function() {
-
 	   //$('div.navbar-main-top').hide(500);
-
 	   if ($(window).scrollTop() == 0) {
 	       scroll_transparency = false;
 	       $('#zap-menu').animate({
 	         backgroundColor: 'rgba(255,255,255,1.0)'
 	       });
 	       console.log('ya svetliy');
-
 	   }else{
 	       if (scroll_transparency == false && $(window).scrollTop() > 0){
 	           $('#zap-menu').animate({
@@ -547,7 +515,6 @@ $pdo = new PDO('mysql:host=localhost;dbname=admin_zap', "admin_zap", "0ncygF3RlB
 	   }
 	});
 	       });
-
 	</script> 
 </body>
 </html>
